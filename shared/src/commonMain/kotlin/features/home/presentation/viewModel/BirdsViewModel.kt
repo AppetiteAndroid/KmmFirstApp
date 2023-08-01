@@ -1,3 +1,5 @@
+package features.home.presentation.viewModel
+
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -12,7 +14,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
-import model.BirdImage
+import features.home.model.BirdImage
 
 data class BirdsUiState(
     val images: List<BirdImage> = emptyList(),

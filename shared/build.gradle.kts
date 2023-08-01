@@ -32,14 +32,17 @@ kotlin {
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material)
+                implementation(compose.animation)
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
-                implementation("media.kamel:kamel-image:0.7.1")
+                implementation("media.kamel:kamel-image:0.6.0")
                 implementation("io.ktor:ktor-client-core:2.3.2")
                 implementation("io.ktor:ktor-client-content-negotiation:2.3.2")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.2")
                 implementation("io.ktor:ktor-client-logging:2.3.2")
                 implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+                implementation("cafe.adriel.voyager:voyager-navigator:1.0.0-rc06")
+                implementation("cafe.adriel.voyager:voyager-transitions:1.0.0-rc06")
                 api("dev.icerock.moko:mvvm-core:0.16.1") // only ViewModel, EventsDispatcher, Dispatchers.UI
                 api("dev.icerock.moko:mvvm-compose:0.16.1") // api mvvm-core, getViewModel for Compose Multiplatfrom
             }
